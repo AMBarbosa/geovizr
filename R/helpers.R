@@ -6,6 +6,10 @@ convert_sf_to_geojson <- function(x) {
     x <- sf::st_as_sf(x)
     return(geojsonsf::sf_geojson(x))
   }
+  if (inherits(x, "SpatVector")) {
+    x <- sf::st_as_sf(x)
+    return(geojsonsf::sf_geojson(x))
+  }
   return(x)
 }
 
