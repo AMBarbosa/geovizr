@@ -41,7 +41,7 @@ allow you to add and refine layers. Finally, the `render()` function displays
 the map. Here are a few examples.
 
 
-First, let's load some data
+First, let's load some spatial data. Our examples use the `st_read()` function of package `sf`, but the `vect()` function of package `terra` can be used as well.
 
 ```r
 library(sf)
