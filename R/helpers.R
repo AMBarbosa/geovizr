@@ -1,4 +1,4 @@
-convert_sf_to_geojson <- function(x) {
+convert_to_geojson <- function(x) {
   if (inherits(x, "sf") || inherits(x, "sfc")) {
     return(geojsonsf::sf_geojson(x))
   }
@@ -19,9 +19,9 @@ convert_sf_to_geojson <- function(x) {
 # }
 
 # r2json <- function(map) {
-#   params_converted <- lapply(map$params, convert_sf_to_geojson)
+#   params_converted <- lapply(map$params, convert_to_geojson)
 #   layers_converted <- lapply(map$layers, function(layer) {
-#     lapply(layer, convert_sf_to_geojson)
+#     lapply(layer, convert_to_geojson)
 #   })
 #   map_combined <- list(
 #     params = params_converted,
@@ -34,10 +34,10 @@ r2json <- function(map) {
   drop_nulls <- function(x) {
     x[!vapply(x, is.null, logical(1))]
   }
-  params_converted <- lapply(map$params, convert_sf_to_geojson)
+  params_converted <- lapply(map$params, convert_to_geojson)
   params_converted <- drop_nulls(params_converted)
   layers_converted <- lapply(map$layers, function(layer) {
-    layer <- lapply(layer, convert_sf_to_geojson)
+    layer <- lapply(layer, convert_to_geojson)
     drop_nulls(layer)
   })
   map_combined <- list(
