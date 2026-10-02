@@ -43,7 +43,10 @@ functions such as `outline()`, `graticule()`, `path()`, and many others
 allow you to add and refine layers. Finally, the `render()` function
 displays the map. Here are a few examples.
 
-First, let’s load some data
+First, let’s load some spatial data. Our examples use the
+[`st_read()`](https://r-spatial.github.io/sf/reference/st_read.html)
+function of package `sf`, but the `vect()` function of package `terra`
+can be used as well.
 
 ``` r
 

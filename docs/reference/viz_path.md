@@ -36,12 +36,14 @@ viz_path(
 
 - data:
 
-  A spatial dataframe Use `data` to enable iteration (e.g. for styling
-  with functions).
+  A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`. Use `data` to enable iteration (e.g. for
+  styling with functions).
 
 - datum:
 
-  A spatial dataframe Use `datum` if no iteration is needed.
+  A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`. Use `datum` if no iteration is needed.
 
 - id:
 

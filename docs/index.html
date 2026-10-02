@@ -28,7 +28,7 @@
 
     <a class="navbar-brand me-2" href="index.html">geovizr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,7 @@
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
 <p>Creating a map with <code>geovizr</code> requires chaining several functions. The <code>create()</code> function initializes a map with general parameters. Then, functions such as <code>outline()</code>, <code>graticule()</code>, <code>path()</code>, and many others allow you to add and refine layers. Finally, the <code>render()</code> function displays the map. Here are a few examples.</p>
-<p>First, let’s load some data</p>
+<p>First, let’s load some spatial data. Our examples use the <code><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read()</a></code> function of package <code>sf</code>, but the <code>vect()</code> function of package <code>terra</code> can be used as well.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
 <span><span class="va">world</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span></span>

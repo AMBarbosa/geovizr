@@ -32,7 +32,7 @@ viz_text(
 
 \item{id}{character. Optional. Unique layer id.}
 
-\item{data}{a spatial dataframe.}
+\item{data}{a spatial data object, such as an `sf` object or a `terra::SpatVector`.}
 
 \item{text}{character or function. Optional. Text to display (default "text").}
 

@@ -109,7 +109,7 @@ viz_create(projection = "EqualEarth", zoomable = T) |>
   viz_choro(
     data = world, var = "gdppc", breaks = bks, colors = cols,
     leg_pos = c(10, 50), leg_title = "Population",
-    leg_subtitle = "in 2020", leg_note = "mad with geoviz"
+    leg_subtitle = "in 2020", leg_note = "mad with geovizr"
   ) |>
   viz_render()
 ```
@@ -124,7 +124,7 @@ viz_create(projection = "EqualEarth", zoomable = T) |>
     data = world, var = "gdppc", breaks = bks,
     colors = cols, opacity = 0.1,
     leg_pos = c(10, 50), leg_title = "Population",
-    leg_subtitle = "in 2020", leg_note = "mad with geoviz",
+    leg_subtitle = "in 2020", leg_note = "mad with geovizr",
     leg_type = "horizontal"
   ) |>
   viz_render()
@@ -214,7 +214,7 @@ viz_create(projection = "EqualEarth", zoomable = T) |>
     line_stroke = "#38896F", line_width = 50,
     line_length = 80, values_dy = -5, values_round = 0,
     values_textAnchor = "end", values_fill = "#38896F",
-    note = "Made with Geoviz", note_dy = 5
+    note = "Made with Geovizr", note_dy = 5
   ) |>
   viz_render()
 ```

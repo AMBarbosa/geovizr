@@ -26,10 +26,10 @@ viz_path(
 \arguments{
 \item{map}{A \code{geovizr} map object created using \code{viz_create()}.}
 
-\item{data}{A spatial dataframe Use \code{data} to enable iteration
+\item{data}{A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration
 (e.g. for styling with functions).}
 
-\item{datum}{A spatial dataframe Use \code{datum} if no iteration is needed.}
+\item{datum}{A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{datum} if no iteration is needed.}
 
 \item{id}{character. Optional. Unique layer id.}
 

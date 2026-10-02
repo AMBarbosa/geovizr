@@ -26,7 +26,7 @@ viz_circle(
 \arguments{
 \item{map}{A \code{geovizr} map object created using \code{viz_create()}.}
 
-\item{data}{object. Optional. A spatial data frame.}
+\item{data}{object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.}
 
 \item{id}{character. Optional. Unique layer id.}
 

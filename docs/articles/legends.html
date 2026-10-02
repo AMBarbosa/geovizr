@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">geovizr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,14 +64,14 @@
 
 
 <link href="legends_files/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-<script src="legends_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="legends_files/utils-1.0.0/utils.js"></script><script src="legends_files/render-1.0.0/index.min.js"></script><script src="legends_files/render-binding-1.0.0/render.js"></script><div class="row">
+<script src="legends_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="legends_files/utils-1.0.0/utils.js"></script><script src="legends_files/render-1.0.0/index.min.js"></script><script src="legends_files/render-binding-1.0.8/render.js"></script><div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>Legends</h1>
                         <h4 data-toc-skip class="author">Nicolas
 Lambert</h4>
             
-            <h4 data-toc-skip class="date">2026-06-25</h4>
+            <h4 data-toc-skip class="date">2026-10-02</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/riatelab/geovizr/blob/HEAD/vignettes/legends.Rmd" class="external-link"><code>vignettes/legends.Rmd</code></a></small>
       <div class="d-none name"><code>legends.Rmd</code></div>
@@ -374,7 +374,7 @@ legend. Then, you can add a title (<code>leg_title</code>), a subtitle
 <span>  <span class="fu"><a href="../reference/viz_choro.html">viz_choro</a></span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">world</span>, var <span class="op">=</span> <span class="st">"gdppc"</span>, breaks <span class="op">=</span> <span class="va">bks</span>, colors <span class="op">=</span> <span class="va">cols</span>,</span>
 <span>    leg_pos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">50</span><span class="op">)</span>, leg_title <span class="op">=</span> <span class="st">"Population"</span>,</span>
-<span>    leg_subtitle <span class="op">=</span> <span class="st">"in 2020"</span>, leg_note <span class="op">=</span> <span class="st">"mad with geoviz"</span></span>
+<span>    leg_subtitle <span class="op">=</span> <span class="st">"in 2020"</span>, leg_note <span class="op">=</span> <span class="st">"mad with geovizr"</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/viz_render.html">viz_render</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="render html-widget html-fill-item" id="htmlwidget-1fb4450895fe099f74a1" style="width:100%;height:576px;"></div>
@@ -407,7 +407,7 @@ legend. Then, you can add a title (<code>leg_title</code>), a subtitle
       "leg_pos": [10, 50],
       "leg_title": "Population",
       "leg_subtitle": "in 2020",
-      "leg_note": "mad with geoviz"
+      "leg_note": "mad with geovizr"
     }
   ]
 },"evals":[],"jsHooks":[]}</script><p>There is also often a <code>leg_type</code> parameter that lets you
@@ -418,7 +418,7 @@ choose the desired type of legend.</p>
 <span>    data <span class="op">=</span> <span class="va">world</span>, var <span class="op">=</span> <span class="st">"gdppc"</span>, breaks <span class="op">=</span> <span class="va">bks</span>,</span>
 <span>    colors <span class="op">=</span> <span class="va">cols</span>, opacity <span class="op">=</span> <span class="fl">0.1</span>,</span>
 <span>    leg_pos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">50</span><span class="op">)</span>, leg_title <span class="op">=</span> <span class="st">"Population"</span>,</span>
-<span>    leg_subtitle <span class="op">=</span> <span class="st">"in 2020"</span>, leg_note <span class="op">=</span> <span class="st">"mad with geoviz"</span>,</span>
+<span>    leg_subtitle <span class="op">=</span> <span class="st">"in 2020"</span>, leg_note <span class="op">=</span> <span class="st">"mad with geovizr"</span>,</span>
 <span>    leg_type <span class="op">=</span> <span class="st">"horizontal"</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/viz_render.html">viz_render</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
@@ -453,7 +453,7 @@ choose the desired type of legend.</p>
       "opacity": 0.1,
       "leg_title": "Population",
       "leg_subtitle": "in 2020",
-      "leg_note": "mad with geoviz"
+      "leg_note": "mad with geovizr"
     }
   ]
 },"evals":[],"jsHooks":[]}</script>
@@ -688,7 +688,7 @@ etc.).</p>
 <span>    line_stroke <span class="op">=</span> <span class="st">"#38896F"</span>, line_width <span class="op">=</span> <span class="fl">50</span>,</span>
 <span>    line_length <span class="op">=</span> <span class="fl">80</span>, values_dy <span class="op">=</span> <span class="op">-</span><span class="fl">5</span>, values_round <span class="op">=</span> <span class="fl">0</span>,</span>
 <span>    values_textAnchor <span class="op">=</span> <span class="st">"end"</span>, values_fill <span class="op">=</span> <span class="st">"#38896F"</span>,</span>
-<span>    note <span class="op">=</span> <span class="st">"Made with Geoviz"</span>, note_dy <span class="op">=</span> <span class="fl">5</span></span>
+<span>    note <span class="op">=</span> <span class="st">"Made with Geovizr"</span>, note_dy <span class="op">=</span> <span class="fl">5</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/viz_render.html">viz_render</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="render html-widget html-fill-item" id="htmlwidget-416566eb193bf50d04e6" style="width:100%;height:576px;"></div>
@@ -741,7 +741,7 @@ etc.).</p>
       "values_thousands": " ",
       "title": "Population",
       "subtitle": "In inh.",
-      "note": "Made with Geoviz",
+      "note": "Made with Geovizr",
       "title_fill": "#363636",
       "title_fontSize": 16,
       "subtitle_fill": "#363636",

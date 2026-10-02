@@ -35,7 +35,8 @@ viz_prop(
 
 - data:
 
-  A spatial dataframe
+  A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`.
 
 - var:
 

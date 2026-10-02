@@ -43,7 +43,8 @@ viz_text(
 
 - data:
 
-  a spatial dataframe.
+  a spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`.
 
 - text:
 

@@ -108,7 +108,8 @@ viz_pattern(
 
 - data:
 
-  object or NULL. Optional. Spatial data frame used to clip the pattern.
+  object or NULL. Optional. A spatial data object, such as an \`sf\`
+  object or a \`terra::SpatVector\` used to clip the pattern.
 
 - clipOutline:
 

@@ -44,7 +44,8 @@ viz_smooth(
 
 - data:
 
-  A spatial dataframe Use `data` to enable iteration over features.
+  A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`. Use `data` to enable iteration over features.
 
 - var:
 

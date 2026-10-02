@@ -24,7 +24,8 @@ viz_clipPath(map, id = NULL, datum = list(type = "Sphere"), permanent = FALSE)
 
 - datum:
 
-  object. Optional. Geometry used for clipping (default
+  object. Optional. A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`. Geometry used for clipping (default
   `list(type = "Sphere")`).
 
 - permanent:

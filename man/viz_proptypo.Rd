@@ -31,7 +31,7 @@ viz_proptypo(
 \arguments{
 \item{map}{A \code{geovizr} map object created using \code{viz_create()}.}
 
-\item{data}{A spatial dataframe Use \code{data} to enable iteration over features.}
+\item{data}{A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.}
 
 \item{var1}{character. Name of the numeric variable used for absolute values
 (driving symbol size).}

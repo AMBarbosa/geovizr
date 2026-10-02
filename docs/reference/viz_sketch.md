@@ -35,7 +35,8 @@ viz_sketch(
 
 - data:
 
-  object. Optional. A spatial data frame (or equivalent geometry input).
+  object. Optional. A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`
 
 - id:
 

@@ -63,7 +63,7 @@ viz_pattern(
 \item{pattern}{character. Optional. Pattern type (default "lines").
 One of: "lines", "cross", "dots", "waves", "triangles", "zigzag".}
 
-\item{data}{object or NULL. Optional. Spatial data frame used to clip the pattern.}
+\item{data}{object or NULL. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector` used to clip the pattern.}
 
 \item{clipOutline}{logical. Optional. Clip pattern to Earth outline (default FALSE).}
 

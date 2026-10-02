@@ -8,18 +8,20 @@
 - **Timothée Giraud**. Contributor.
   [](https://orcid.org/0000-0002-1932-3323)
 
+- **A. Marcia Barbosa**. Contributor.
+
 ## Citation
 
 Source:
 [`DESCRIPTION`](https://github.com/riatelab/geovizr/blob/HEAD/DESCRIPTION)
 
 Lambert N (2026). *geovizr: Interactive Cartography*. R package version
-1.0.0, <https://riatelab.github.io/geovizr/>.
+1.0.8, <https://riatelab.github.io/geovizr/>.
 
     @Manual{,
       title = {geovizr: Interactive Cartography},
       author = {Nicolas Lambert},
       year = {2026},
-      note = {R package version 1.0.0},
+      note = {R package version 1.0.8},
       url = {https://riatelab.github.io/geovizr/},
     }

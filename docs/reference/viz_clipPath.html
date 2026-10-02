@@ -3,7 +3,7 @@
 and adds it to the SVG defs. It returns a reference usable in SVG styling
 (e.g. url(#id)). WARNING: the clipPath is global to the web page, not only the map."><meta property="og:description" content="The viz_clipPath function creates an SVG clipPath definition
 and adds it to the SVG defs. It returns a reference usable in SVG styling
-(e.g. url(#id)). WARNING: the clipPath is global to the web page, not only the map."><meta property="og:image" content="https://riatelab.github.io/geovizr/reference/figures/logo.png"><meta property="og:image:alt" content="geovizr: thematic cartography"><!-- dependencies from examples --><script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="libs/utils-1.0.0/utils.js"></script><script src="libs/render-1.0.0/index.min.js"></script><script src="libs/render-binding-1.0.0/render.js"></script></head><body>
+(e.g. url(#id)). WARNING: the clipPath is global to the web page, not only the map."><meta property="og:image" content="https://riatelab.github.io/geovizr/reference/figures/logo.png"><meta property="og:image:alt" content="geovizr: thematic cartography"><!-- dependencies from examples --><script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="libs/utils-1.0.0/utils.js"></script><script src="libs/render-1.0.0/index.min.js"></script><script src="libs/render-binding-1.0.8/render.js"></script></head><body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
@@ -11,7 +11,7 @@ and adds it to the SVG defs. It returns a reference usable in SVG styling
 
     <a class="navbar-brand me-2" href="../index.html">geovizr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@ and adds it to the SVG defs. It returns a reference usable in SVG styling
 
 
 <dt id="arg-datum">datum<a class="anchor" aria-label="anchor" href="#arg-datum"></a></dt>
-<dd><p>object. Optional. Geometry used for clipping (default <code>list(type = "Sphere")</code>).</p></dd>
+<dd><p>object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`. Geometry used for clipping (default <code>list(type = "Sphere")</code>).</p></dd>
 
 
 <dt id="arg-permanent">permanent<a class="anchor" aria-label="anchor" href="#arg-permanent"></a></dt>

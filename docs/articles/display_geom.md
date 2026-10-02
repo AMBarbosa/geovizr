@@ -5,8 +5,11 @@
 library(geovizr)
 ```
 
-As is usual in R, the `geovizr` package takes spatial data frames as
-input. You therefore need to load the `sf` package to import geometries.
+The `geovizr` package takes spatial data frames as input. You can import
+geometries with either the
+[`st_read()`](https://r-spatial.github.io/sf/reference/st_read.html)
+function of the `sf` package, or the `vect()` function of the `terra`
+package.
 
 ``` r
 

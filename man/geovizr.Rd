@@ -35,6 +35,7 @@ Authors:
 Other contributors:
 \itemize{
   \item Timothée Giraud \email{timothee.giraud@cnrs.fr} (\href{https://orcid.org/0000-0002-1932-3323}{ORCID}) [contributor]
+  \item A. Marcia Barbosa \email{a.marcia.barbosa@cnrs.fr} [contributor]
 }
 
 }

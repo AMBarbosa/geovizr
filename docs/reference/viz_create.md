@@ -45,10 +45,6 @@ viz_create(
   size changes. Everything is recalculated every time the window is
   resized (default FALSE)
 
-- domain:
-
-  spatial dataframe. Optional. Geographic domain to display.
-
 - responsive:
 
   logical. Optional. Whether the SVG map resizes with the container
@@ -87,6 +83,11 @@ viz_create(
 
   logical. Optional. Whether to display warnings on the map (default
   TRUE).
+
+- domain.:
+
+  A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`. Optional. Geographic domain to display.
 
 ## Value
 

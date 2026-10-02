@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">geovizr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,14 +64,14 @@
 
 
 <link href="display_geom_files/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-<script src="display_geom_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="display_geom_files/utils-1.0.0/utils.js"></script><script src="display_geom_files/render-1.0.0/index.min.js"></script><script src="display_geom_files/render-binding-1.0.0/render.js"></script><div class="row">
+<script src="display_geom_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="display_geom_files/utils-1.0.0/utils.js"></script><script src="display_geom_files/render-1.0.0/index.min.js"></script><script src="display_geom_files/render-binding-1.0.8/render.js"></script><div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>Display a basemap</h1>
                         <h4 data-toc-skip class="author">Nicolas
 Lambert</h4>
             
-            <h4 data-toc-skip class="date">2026-06-25</h4>
+            <h4 data-toc-skip class="date">2026-10-02</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/riatelab/geovizr/blob/HEAD/vignettes/display_geom.Rmd" class="external-link"><code>vignettes/display_geom.Rmd</code></a></small>
       <div class="d-none name"><code>display_geom.Rmd</code></div>
@@ -81,9 +81,10 @@ Lambert</h4>
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://riatelab.github.io/geovizr/">geovizr</a></span><span class="op">)</span></span></code></pre></div>
-<p>As is usual in R, the <code>geovizr</code> package takes spatial data
-frames as input. You therefore need to load the <code>sf</code> package
-to import geometries.</p>
+<p>The <code>geovizr</code> package takes spatial data frames as input.
+You can import geometries with either the <code><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read()</a></code>
+function of the <code>sf</code> package, or the <code>vect()</code>
+function of the <code>terra</code> package.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
 <span><span class="va">australia</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"gpkg/aus.gpkg"</span>, package <span class="op">=</span> <span class="st">"geovizr"</span><span class="op">)</span></span>

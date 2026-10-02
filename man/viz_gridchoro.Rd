@@ -24,7 +24,7 @@ viz_gridchoro(
 \arguments{
 \item{map}{A \code{geovizr} map object created using \code{viz_create()}.}
 
-\item{data}{A spatial dataframe Use \code{data} to enable iteration over features.}
+\item{data}{A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.}
 
 \item{var}{character or character vector. Variable(s) used for aggregation.
 If two variables are provided, a ratio is computed.}

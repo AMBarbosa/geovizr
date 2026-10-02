@@ -39,7 +39,8 @@ viz_halfcircle(
 
 - data:
 
-  object. Optional. A spatial data frame.
+  object. Optional. A spatial data object, such as an \`sf\` object or a
+  \`terra::SpatVector\`.
 
 - id:
 

@@ -19,7 +19,7 @@ viz_picto(
 \arguments{
 \item{map}{A \code{geovizr} map object created using \code{viz_create()}.}
 
-\item{data}{A spatial dataframe Use \code{data} to enable iteration over features.}
+\item{data}{A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.}
 
 \item{var}{character. Name of the categorical variable used for symbol assignment,
 or directly the name of a symbol.}

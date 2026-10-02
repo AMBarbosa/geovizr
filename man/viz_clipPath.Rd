@@ -11,7 +11,7 @@ viz_clipPath(map, id = NULL, datum = list(type = "Sphere"), permanent = FALSE)
 
 \item{id}{character. Optional. Unique clipPath id.}
 
-\item{datum}{object. Optional. Geometry used for clipping (default \code{list(type = "Sphere")}).}
+\item{datum}{object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`. Geometry used for clipping (default \code{list(type = "Sphere")}).}
 
 \item{permanent}{logical or character. Optional. Whether the clipPath is static (default FALSE).}
 }
