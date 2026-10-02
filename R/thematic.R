@@ -4,7 +4,7 @@
 #' spike, half-circle) sized according to a numeric variable, and optionally includes
 #' a legend.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.#' @param map A \code{geoviz} map created with \code{viz_create}.
-#' @param data A spatial dataframe
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param var character. Variable name containing numeric values used for scaling symbols.
 #' @param symbol character. Optional. Symbol type (default "circle").
 #' One of: "circle", "square", "spike", "halfcircle".
@@ -83,7 +83,7 @@ viz_prop <- function(
 #' data frame by classifying a numeric variable and mapping it to a color palette.
 #' It supports multiple classification methods and automatic legend generation.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration over features.
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.
 #' @param var character. Name of the numeric variable used for classification.
 #' You can also use \code{fill} or \code{stroke} directly instead of \code{var}.
 #' @param method character. Optional. Classification method (default "quantile").
@@ -164,7 +164,7 @@ viz_choro <- function(
 #' data frame by mapping categorical variables to colors. It supports custom ordering,
 #' color palettes, and automatic legend generation.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration over features.
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.
 #' @param var character. Name of the categorical variable used for styling.
 #' You can also use \code{fill} or \code{stroke} directly instead of \code{var}.
 #' @param colors character or vector. Optional. Color palette or vector of colors.
@@ -233,7 +233,7 @@ viz_typo <- function(
 #' choropleth mapping on the same spatial data frame. It allows simultaneous encoding
 #' of two numeric variables using symbols (size) and colors (classification).
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration over features.
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.
 #' @param var1 character. Name of the numeric variable used for absolute values
 #' (driving symbol size).
 #' @param var2 character. Name of the numeric variable used for relative values
@@ -355,7 +355,7 @@ viz_propchoro <- function(
 #' typology mapping on the same spatial data frame. It allows simultaneous encoding
 #' of two variables using symbol size (quantitative) and categorical coloring.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration over features.
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.
 #' @param var1 character. Name of the numeric variable used for absolute values
 #' (driving symbol size).
 #' @param var2 character. Name of the numeric variable used for categorical mapping.
@@ -464,7 +464,7 @@ viz_proptypo <- function(
 #' map layer from a spatial data frame. It allows mapping qualitative variables
 #' to custom symbols and supports legend generation and ordering.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration over features.
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration over features.
 #' @param var character. Name of the categorical variable used for symbol assignment,
 #' or directly the name of a symbol.
 #' @param symbols character vector. Optional. Vector of available symbols. Symbols available: "circle", "square", "triangle", "pentagon", "hexagon", "roundsquare", "pillow", "drop", "egg", "star12", "star8", "star", "diamond", "trapzium", "plus", "minus", "arrow", "stop", "vbar", "crescent", "donut", "heart", "clover", "fist", "check", "plane", "rocket", "boat", "pin", "hospital", "flower", "cloud", "human", "tent", "beer", "boom", "nuke", "target", "missing"

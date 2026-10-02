@@ -3,7 +3,7 @@
 #' data frame or from a single position. It can be used to create proportional symbol maps
 #' with optional collision avoidance.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame.
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param pos numeric vector. Optional. Position of a single circle (default c(0, 0)).
 #' @param r numeric or character. Optional. Circle radius (default 10).
@@ -82,7 +82,7 @@ viz_circle <- function(
 #' from a spatial data frame or from a single position. It can be used to create
 #' proportional symbol maps with square markers.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame.
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param pos numeric vector. Optional. Position of a single square (default c(0, 0)).
 #' @param dx numeric. Optional. Horizontal shift (default 0).
@@ -163,7 +163,7 @@ viz_square <- function(
 #' data frame or from a single position. It can be used to represent values with
 #' vertical symbols (e.g. for density or intensity maps).
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame.
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param pos numeric vector. Optional. Position of a single spike (default c(0, 0)).
 #' @param height numeric or character. Optional. Spike height (default 10).
@@ -242,7 +242,7 @@ viz_spike <- function(
 #' from a spatial data frame or from a single position. It can be used to represent values
 #' with semi-circular proportional symbols.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame.
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param pos numeric vector. Optional. Position of a single half-circle (default c(0, 0)).
 #' @param dx numeric. Optional. Horizontal shift (default 0).
@@ -329,7 +329,7 @@ viz_halfcircle <- function(
 #' data frame. It allows the use of predefined symbols, scaling, rotation, and styling,
 #' and can be used for categorical or proportional symbol maps.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame.
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param pos numeric vector. Optional. Position of a single symbol (default c(0, 0)).
 #' @param fill character or function. Optional. Fill color.

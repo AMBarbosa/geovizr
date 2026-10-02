@@ -162,7 +162,7 @@ viz_blur <- function(
 #' (e.g. \code{url(#id)}). WARNING: the clipPath is global to the web page, not only the map.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
 #' @param id character. Optional. Unique clipPath id.
-#' @param datum object. Optional. Geometry used for clipping (default \code{list(type = "Sphere")}).
+#' @param datum object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`. Geometry used for clipping (default \code{list(type = "Sphere")}).
 #' @param permanent logical or character. Optional. Whether the clipPath is static (default FALSE).
 #' @return A modified `geoviz` map object with a new effect added.
 #' Rendering is performed using \code{viz_render()}
@@ -218,7 +218,7 @@ viz_clipPath <- function(
 #' @param display character or NULL. Optional. SVG display property.
 #' @param pattern character. Optional. Pattern type (default "lines").
 #' One of: "lines", "cross", "dots", "waves", "triangles", "zigzag".
-#' @param data object or NULL. Optional. Spatial data frame used to clip the pattern.
+#' @param data object or NULL. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector` used to clip the pattern.
 #' @param clipOutline logical. Optional. Clip pattern to Earth outline (default FALSE).
 #' @param ... Additional SVG attributes (e.g. \code{strokeDasharray}, \code{opacity},
 #' \code{strokeLinecap}, etc.).
@@ -292,7 +292,7 @@ viz_pattern <- function(
 #' hand-drawn (sketchy) SVG shapes. It uses SVG filters (feTurbulence and
 #' feDisplacementMap) to simulate a pencil-like rendering style.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data object. Optional. A spatial data frame (or equivalent geometry input).
+#' @param data object. Optional. A spatial data object, such as an `sf` object or a `terra::SpatVector`
 #' @param id character. Optional. Unique layer id (auto-generated if not provided).
 #' @param fill character. Optional. Fill color (default "none").
 #' @param stroke character. Optional. Stroke color (default "#000").

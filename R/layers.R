@@ -241,9 +241,9 @@ viz_footer <- function(map, id = NULL, text = "Author, source...", fill = "#9e96
 #' as SVG paths. This function can be used to display polygons, lines, or points,
 #' and supports styling, simplification, and interaction.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data A spatial dataframe Use \code{data} to enable iteration
+#' @param data A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{data} to enable iteration
 #' (e.g. for styling with functions).
-#' @param datum A spatial dataframe Use \code{datum} if no iteration is needed.
+#' @param datum A spatial data object, such as an `sf` object or a `terra::SpatVector`. Use \code{datum} if no iteration is needed.
 #' @param id character. Optional. Unique layer id.
 #' @param coords character. Optional. Coordinate system (default "geo").
 #' Use \code{"svg"} if coordinates are already expressed in the SVG coordinate space.
@@ -344,7 +344,7 @@ viz_tile <- function(map, id = NULL, tileSize = 512, zoomDelta = 1, opacity = 1,
 #' @description The \code{viz_text} function adds a text on a geoviz map
 #' and can also generate labels from a spatial dataframe.
 #' @param map A \code{geovizr} map object created using \code{viz_create()}.
-#' @param data a spatial dataframe.
+#' @param data a spatial data object, such as an `sf` object or a `terra::SpatVector`.
 #' @param id character. Optional. Unique layer id.
 #' @param text character or function. Optional. Text to display (default "text").
 #' @param textAnchor character or function. Optional. Text anchor ("start","middle","end").
