@@ -32,7 +32,7 @@ Imports:
     htmlwidgets,
     geojsonsf,
     jsonlite, 
-    sf
+    sf (>= 0.9-8)
 Language: en-US
 Config/roxygen2/version: 8.0.0
 
